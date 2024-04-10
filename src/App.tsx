@@ -1,17 +1,15 @@
 import './App.css';
-import List from './components/generics/List';
-import CustomButton from './components/html/Button';
-import DOMRef from './components/ref/DOMRef';
-import MutableRef from './components/ref/MutableRef';
-import { RandomNumber } from './components/restriction/RandomNumber';
-import Toast from './components/templateLiterals/Toast';
+import Text from './components/polymorphic/text';
 
 function App() {
   return (
     <div className="App">
-      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+      <Text as="h1" size="lg">
+        Heading Text
+      </Text>
+      {/* <CustomButton variant="primary" onClick={() => console.log("clicked")}>
         Primary Button
-      </CustomButton>
+      </CustomButton> */}
       {/* <Toast position="top-left" /> */}
       {/* <RandomNumber value={10} isPositive={true} /> */}
       {/* <List 
